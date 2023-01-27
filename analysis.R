@@ -19,7 +19,7 @@ m2 <-  gamlss(logSL_Closed_L ~ pb(age_years),
                  family = SHASH, data = dat, n.cyc=75, c.crit=0.01)
 
 m2_chosen <- chooseDist(logol, type = "realline", k=c(2,4,log(13042)), parallel="snow", ncpus=4)
-# SEP3 chosen
+# logSEP3 chosen
 
 gen.Family("SEP3", type="log")
 
